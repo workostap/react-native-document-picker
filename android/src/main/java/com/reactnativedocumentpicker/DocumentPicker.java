@@ -68,6 +68,8 @@ public class DocumentPicker extends ReactContextBaseJavaModule implements Activi
                 intent.setType(filetypes.getString(0));
             }
         }
+        
+        intent.putExtra("android.content.extra.SHOW_ADVANCED", true);
 
         this.callback = callback;
 
